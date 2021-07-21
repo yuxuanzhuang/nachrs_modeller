@@ -16,7 +16,8 @@ env = Environ()
 # directories for input atom files
 env.io.atom_files_directory = ['.', '../atom_files']
 
-a = AutoModel(env,
+# be sure to change to MyModel
+a = MyModel(env,
             alnfile  = 'fivechain.ali' ,     # alignment filename
             knowns   = '6pv7_cleaned',              # codes of the templates
             sequence = '3hlr')              # code of the target
